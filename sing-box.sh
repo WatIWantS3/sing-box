@@ -1693,7 +1693,8 @@ EOF
     "outbounds":[
         {
             "type":"direct",
-            "tag":"direct"
+            "tag":"direct",
+            "domain_strategy": "prefer_ipv6"
         }
     ]
 }
@@ -1798,7 +1799,7 @@ EOF
                 "type":"local"
             }
         ],
-        "strategy": "${STRATEGY}"
+        "strategy": "prefer_ipv6"
     }
 }
 EOF
